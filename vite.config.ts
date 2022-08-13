@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJSX from "@vitejs/plugin-vue-jsx";
@@ -13,11 +15,7 @@ const rollupOptions = {
 };
 
 export default defineConfig({
-  plugins: [
-    vue(),
-    vueJSX(),
-    Unocss(),
-  ],
+  plugins: [vue(), vueJSX(), Unocss()],
 
   // 添加库模块配置
   build: {
@@ -29,6 +27,18 @@ export default defineConfig({
       fileName: "smarty-ui",
       // 导出模块
       formats: ["es", "umd", "iife"],
+    },
+  },
+
+  test: {
+    // 开启像jest一样的全局api模式
+    globals: false,
+    // 设置提供仿真DOm
+    environment: "happy-dom",
+
+    // 支持tsx组件，很关键
+    transformMode: {
+      web: [/.[tj]sx$/],
     },
   },
 });

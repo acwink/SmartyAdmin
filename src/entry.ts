@@ -1,5 +1,5 @@
 import { App } from "vue";
-import ACButton from "./button/ACButton";
+import ACButton from "./button";
 
 // 单独导出组件
 export { ACButton };

@@ -1,4 +1,4 @@
-import { defineComponent, PropType, h } from "vue";
+import { defineComponent, PropType } from "vue";
 import "uno.css";
 
 export type IColor =
@@ -94,11 +94,11 @@ function createButtonStyle(props: IPorps) {
 
   const createThemeStyle = (plain: boolean, color: IColor) => {
     const borderStyle = `
-      text-${props.color}
+      text-${color}
       hover:text-white
       
-      bg-${props.color}-100 
-      hover:bg-${props.color}-500 
+      bg-${color}-100 
+      hover:bg-${color}-500 
     `;
 
     const fillStyle = `

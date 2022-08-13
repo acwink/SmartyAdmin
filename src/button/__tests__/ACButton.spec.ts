@@ -8,8 +8,8 @@ describe("ACButton", () => {
     // mount
     const wrapper = shallowMount(ACButton, {
       slots: {
-        default: "Button",
-      },
+        default: "Button"
+      }
     });
 
     // 断言
@@ -19,11 +19,11 @@ describe("ACButton", () => {
   test("color blue", () => {
     const wrapper = shallowMount(ACButton, {
       slots: {
-        default: "Button",
+        default: "Button"
       },
       props: {
-        color: "blue",
-      },
+        color: "blue"
+      }
     });
 
     expect(wrapper.classes().includes("bg-blue-500")).toBe(true);
@@ -32,11 +32,11 @@ describe("ACButton", () => {
   test("color red", () => {
     const wrapper = shallowMount(ACButton, {
       slots: {
-        default: "Button",
+        default: "Button"
       },
       props: {
-        color: "red",
-      },
+        color: "red"
+      }
     });
 
     expect(wrapper.classes().includes("bg-red-500")).toBe(true);

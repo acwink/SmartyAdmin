@@ -33,24 +33,24 @@ export interface IPorps {
 const props = {
   color: {
     type: String as PropType<IColor>,
-    default: "blue",
+    default: "blue"
   },
   plain: {
     type: Boolean,
-    default: false,
+    default: false
   },
   size: {
     type: String as PropType<ISize>,
-    default: "medium",
+    default: "medium"
   },
   round: {
     type: Boolean,
-    default: false,
+    default: false
   },
   icon: {
     type: String as PropType<Iicon>,
-    default: "",
-  },
+    default: ""
+  }
 };
 
 // 创建按钮样式
@@ -135,5 +135,5 @@ export default defineComponent({
         {slots.default ? slots.default() : ""}
       </button>
     );
-  },
+  }
 });

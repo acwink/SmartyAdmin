@@ -8,5 +8,5 @@ export { ACButton };
 export default {
   install(app: App) {
     app.component(ACButton.name, ACButton);
-  },
+  }
 };

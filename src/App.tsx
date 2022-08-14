@@ -1,6 +1,7 @@
 import { defineComponent } from "vue";
 import ACButton from "./button/ACButton";
-
+let a = 1;
+console.log(a);
 export default defineComponent({
   name: "App",
   render() {
@@ -59,5 +60,5 @@ export default defineComponent({
         </div>
       </div>
     );
-  }
+  },
 });

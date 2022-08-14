@@ -1,3 +1,7 @@
 <p>前端工程化教学</p>
-![](https://github.com/acwink/SmartyAdmin/workflows/lint/badge.svg)
-![](https://github.com/acwink/SmartyAdmin/workflows/test/badge.svg)
+<p>
+<p align="center">
+  <a href="https://github.com/acwink/SmartyAdmin/action/workflows/main.yml">
+    <img src="https://github.com/acwink/SmartyAdmin/action/workflows/main.yml/badge.svg?branch=main" alt="">
+  </a>
+</p>

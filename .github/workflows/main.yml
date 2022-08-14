@@ -17,7 +17,7 @@ jobs:
           version: 7.2.1
       - name: Install modules
         run: pnpm install
-      - name: Run Test
+      - name: lint
         run: pnpm run lint
 
   UnitTest:
@@ -31,5 +31,5 @@ jobs:
           version: 7.2.1
       - name: Install modules
         run: pnpm install
-      - name: Run Test
+      - name: test
         run: pnpm run test:run

@@ -20,7 +20,9 @@ export default defineConfig({
   // 添加库模块配置
   build: {
     rollupOptions,
-    minify: false,
+    minify: "esbuild", // boolean | 'terser' | "esbuild"
+    sourcemap: true, // 单独输出source文件
+    cssCodeSplit: true,
     lib: {
       entry: "./src/entry.ts",
       name: "SmartyUI",
